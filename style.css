@@ -1,6 +1,25 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+.home {
+  background-image: url("img/jefferson_coffee_web.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home h1{
+  margin-top: 0;
+}
+
+.portfolio-section ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
 }
 
 .contact-section{
@@ -9,7 +28,7 @@ body {
 
 .contact-content{
   margin: 0 auto;
-  padding: 50px;
+  /* padding: 50px; */
   text-align: center;
   width: 50em;
 }
