@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section{
+ background-color: #C5F4E4;
+}
+
+.contact-content{
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  width: 50em;
+}
+
+input{
+/*   width: 300px; */
+}
