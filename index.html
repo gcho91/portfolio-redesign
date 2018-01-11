@@ -3,11 +3,27 @@
 
 <head>
   <title>New Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <body>
+
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+
+  </div>
+
 
 
   <div class="home">
@@ -16,40 +32,42 @@
   </div>
 
 <section class="cards">
+
   <article>
-    <img class="article-img" src="http://placekitten.com/305/205" alt=" " />
+    <img class="article-img" id="myBtn" src="img/gmarket.jpg" alt="minimalist ecommerce website screenshot" />
     <h1 class="article-title">
-      Title of article
+      GMarket - AngularJS
+    </h1>
+  </article>
+
+  <article>
+    <img class="article-img" src="img/airbnb.png" alt="airbnb clone screenshot" />
+    <h1 class="article-title">
+      Airbnb Clone - ReactJS
     </h1>
   </article>
   <article>
-    <img class="article-img" src="http://placekitten.com/320/220" alt=" " />
+    <img class="article-img" src="img/sprofinder.png" alt="sprofinder web app screenshot" />
     <h1 class="article-title">
-      Title of article
+      sproFinder - Google Maps API
     </h1>
   </article>
   <article>
-    <img class="article-img" src="http://placekitten.com/330/240" alt=" " />
+    <img class="article-img" src="img/lynns nyc supper club portfolio.png" alt=" " />
     <h1 class="article-title">
-      Title of article
+      Lynn's NYC Supper Club
     </h1>
   </article>
   <article>
-    <img class="article-img" src="http://placekitten.com/280/250" alt=" " />
+    <img class="article-img" src="https://i.gyazo.com/111b719eece35aef66d6359cd635a2d8.png" alt=" " />
     <h1 class="article-title">
-      Title of article
+      Linkin Park Tribute
     </h1>
   </article>
   <article>
-    <img class="article-img" src="http://placekitten.com/310/210" alt=" " />
+    <img class="article-img" src="https://i.gyazo.com/da66310ccebbec7a78b88925018a04d0.jpg" alt=" " />
     <h1 class="article-title">
-      Title of article
-    </h1>
-  </article>
-  <article>
-    <img class="article-img" src="http://placekitten.com/430/240" alt=" " />
-    <h1 class="article-title">
-      Title of article
+      Shodai Japanese Church
     </h1>
   </article>
 </section>
@@ -86,7 +104,37 @@
   </div>
 
 
-<!-- https://www.wix.com/website-template/view/html/1582?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fdesign%2Fportfolio%2F1&bookName=&galleryDocIndex=9&category=design -->
+<!-- modal ref -->
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal -->
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 
 </html>
