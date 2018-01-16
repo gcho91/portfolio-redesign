@@ -33,8 +33,17 @@ body {
   width: 50em;
 }
 
-input{
-/*   width: 300px; */
+input, textarea{
+  width: 50%;
+  background: transparent;
+}
+
+input::placeholder, textarea::placeholder{
+  color: inherit;
+}
+
+a:visited{
+  color: inherit;
 }
 
 

@@ -3,22 +3,24 @@
 
 <head>
   <title>New Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
-
+<!-- <img src="http://soulsnatcher.bplaced.net/LDRYh.jpg" alt="unfinished bingo card" onclick="myfunction()" / -->
   <!-- Trigger/Open The Modal -->
   <!-- <button id="myBtn">Portfolio Modal</button> -->
   <!-- <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" id="myBtn" alt=""> -->
 
   <!-- The Modal -->
-  <div id="myModal" class="modal">
+  <div id="myModal1" class="modal">
 
     <!-- Modal content -->
-    <div class="modal-content" style="background-color: #C5F4E4;">
+    <div id="modalOne" class="modal-content" style="background-color: #C5F4E4;">
       <span class="close">&times;</span>
       <h2>Portfolio Item #1</h2>
       <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
@@ -33,7 +35,7 @@
     <div class="modal-content" style="background-color: #C5F4E4;">
       <span class="close" id="close2">&times;</span>
       <h2>Portfolio Item #2</h2>
-      <p>screw you</p>
+      <p>Content 2 here</p>
       <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" width="60%" alt="">
     </div>
 
@@ -49,13 +51,13 @@
 <section class="cards">
 
   <article>
-    <img class="article-img" id="myBtn" src="img/gmarket.jpg" alt="minimalist ecommerce website screenshot" />
+    <img class="article-img" class="button" id = "myBtn" data-modal="modalOne" src="img/gmarket.jpg" alt="minimalist ecommerce website screenshot" />
     <h1 class="article-title">
       GMarket - AngularJS
     </h1>
   </article>
   <article>
-    <img class="article-img" id="myBtn2" src="img/airbnb.png" alt="airbnb clone screenshot" />
+    <img class="article-img" class="button" src="img/airbnb.png" alt="airbnb clone screenshot" />
     <h1 class="article-title">
       Airbnb Clone - ReactJS
     </h1>
@@ -91,21 +93,21 @@
     <h3>Gloria Cho - Web Developer & Marketer</h3>
     <p>Get in touch with me about your next project or opportunity! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
 
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-      <i class="fa fa-github" aria-hidden="true"></i>
+      <a href="https://www.facebook.com/gcho91alt"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 2em;"></i></a>
+      <a href="https://www.twitter.com/espresscho"><i class="fa fa-twitter" aria-hidden="true" style="font-size: 2em;"></i></a>
+      <a href="https://www.github.com/gcho91"><i class="fa fa-github" aria-hidden="true" style="font-size: 2em;"></i></a>
 
       <br><br>
 
     <form>
-      Name: <br>
-      <input type="text" name="name">
+      <!-- Name: <br> -->
+      <input type="text" name="name" placeholder="Name*">
       <br>
-      Email: <br>
-      <input type="email" name="email">
+      <!-- Email: <br> -->
+      <input type="email" name="email" placeholder="Email*">
       <br>
-      Comment: <br>
-      <textarea rows="4"  name="comment"></textarea>
+      <!-- Comment: <br> -->
+      <textarea rows="4"  name="comment" placeholder="Comment*"></textarea>
       <br>
 
     </form>
